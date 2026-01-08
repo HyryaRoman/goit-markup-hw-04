@@ -1,5 +1,18 @@
 :root {
   --default-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  --iris: #4d5ae5;
+  --ocean: #404bbf;
+  --navy-blue: #2e2f42;
+  --green: #31d0aa;
+  --slate: #434455;
+  --light-slate: #8e8f99;
+  --cornflower: #e7e9fc;
+  --cloud: #f4f4fd;
+  --navy-blue-modal: rgba(46, 47, 66, 0.4);
+  --grey: rgba(46, 47, 66, 0.7);
+  --white: #fff;
+  --dairy: #fcfcfc;
 }
 
 body {
@@ -7,8 +20,8 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  color: #434455;
-  background-color: #ffffff;
+  color: var(--slate);
+  background-color: var(--white);
 }
 
 ul {
@@ -20,14 +33,14 @@ button {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  background-color: #4d5ae5;
-  color: #ffffff;
+  background-color: var(--iris);
+  color: var(--white);
   cursor: pointer;
 }
 
 button:hover,
 button:focus {
-  background-color: #404bbf;
+  background-color: var(--ocean);
 }
 
 h1,
@@ -49,7 +62,7 @@ h1,
 h2,
 h3 {
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  color: var(--navy-blue);
 }
 
 h1 {
@@ -87,7 +100,7 @@ img {
 }
 
 .header {
-  border-bottom: 1px solid #e7e9fc;
+  border-bottom: 1px solid var(--cornflower);
 }
 
 .header-bar {
@@ -108,16 +121,16 @@ img {
   line-height: 1.1666;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #2e2f42;
+  color: var(--navy-blue);
   text-decoration: none;
 }
 
 .logo--dark {
-  color: #f4f4fd;
+  color: var(--cloud);
 }
 
 .logo__accent {
-  color: #4d5ae5;
+  color: var(--iris);
 }
 
 .nav-bar {
@@ -133,13 +146,13 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  color: var(--navy-blue);
   text-decoration: none;
 }
 
 .nav-link:hover,
 .nav-link:focus {
-  color: #404bbf;
+  color: var(--ocean);
 }
 
 .contact-bar {
@@ -154,13 +167,13 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #434455;
+  color: var(--slate);
   text-decoration: none;
 }
 
 .contact-link:hover,
 .contact-link:focus {
-  color: #404bbf;
+  color: var(--ocean);
 }
 
 .section {
@@ -168,10 +181,7 @@ img {
 }
 
 .hero-section {
-  background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
+  background-image: linear-gradient(var(--grey), var(--grey)),
     url("/images/hero.jpg");
   background-position: center center;
   background-repeat: no-repeat;
@@ -195,11 +205,11 @@ img {
 
 .page-title {
   text-align: center;
-  color: #ffffff;
+  color: var(--white);
 }
 
 .team-section {
-  background-color: #f4f4fd;
+  background-color: var(--cloud);
 }
 
 .section-title {
@@ -222,8 +232,8 @@ img {
   align-items: center;
   height: 112px;
   margin-bottom: 8px;
-  background-color: #f4f4fd;
-  border: 1px solid #8e8f99;
+  background-color: var(--cloud);
+  border: 1px solid var(--light-slate);
   border-radius: 4px;
 }
 
@@ -238,7 +248,7 @@ img {
 
 .team-member {
   width: calc((100% - 24px * 3) / 4);
-  background-color: #ffffff;
+  background-color: var(--white);
   border-radius: 0 0 4px 4px;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
@@ -272,7 +282,7 @@ img {
   align-items: center;
   width: 40px;
   height: 40px;
-  background-color: #4d5ae5;
+  background-color: var(--iris);
   border-radius: 50%;
 }
 
@@ -280,7 +290,7 @@ img {
   display: block;
   width: 16px;
   height: 16px;
-  fill: #f4f4fd;
+  fill: var(--cloud);
 }
 
 .portfolio-list {
@@ -306,7 +316,7 @@ img {
 
 .portfolio-project__plague {
   padding: 32px 16px;
-  border: 1px solid #e7e9fc;
+  border: 1px solid var(--cornflower);
   border-top: none;
 }
 
@@ -316,8 +326,8 @@ img {
 
 .page-footer {
   padding: 100px 15px;
-  background-color: #2e2f42;
-  color: #f4f4fd;
+  background-color: var(--navy-blue);
+  color: var(--cloud);
 }
 
 .page-footer-container {
@@ -331,7 +341,7 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #ffffff;
+  color: var(--white);
 }
 
 .page-footer__logo {
@@ -354,7 +364,7 @@ img {
   align-items: center;
   width: 40px;
   height: 40px;
-  background-color: #4d5ae5;
+  background-color: var(--iris);
   border-radius: 50%;
 }
 
@@ -362,7 +372,7 @@ img {
   display: block;
   width: 24px;
   height: 24px;
-  fill: #f4f4fd;
+  fill: var(--cloud);
 }
 
 .visually-hidden {
