@@ -336,6 +336,32 @@ img {
 }
 
 .portfolio-project__thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-project__thumb-description {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 40px 32px;
+  background-color: var(--iris);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--cloud);
+  transform: translateY(100%);
+  transition: transform var(--default-transition);
+}
+
+.portfolio-project:hover .portfolio-project__thumb-description,
+.portfolio-project:focus .portfolio-project__thumb-description {
+  transform: translateY(0);
+}
+
+.portfolio-project__thumb-image {
   width: 100%;
 }
 
