@@ -36,6 +36,7 @@ button {
   background-color: var(--iris);
   color: var(--white);
   cursor: pointer;
+  transition: background-color var(--default-transition);
 }
 
 button:hover,
@@ -148,6 +149,7 @@ img {
   letter-spacing: 0.02em;
   color: var(--navy-blue);
   text-decoration: none;
+  transition: color var(--default-transition);
 }
 
 .nav-link:hover,
@@ -169,6 +171,7 @@ img {
   letter-spacing: 0.02em;
   color: var(--slate);
   text-decoration: none;
+  transition: color var(--default-transition);
 }
 
 .contact-link:hover,
@@ -284,6 +287,12 @@ img {
   height: 40px;
   background-color: var(--iris);
   border-radius: 50%;
+  transition: background-color var(--default-transition);
+}
+
+.team-member__social-link:hover,
+.team-member__social-link:focus {
+  background-color: var(--ocean);
 }
 
 .team-member__social-link-icon {
@@ -366,6 +375,12 @@ img {
   height: 40px;
   background-color: var(--iris);
   border-radius: 50%;
+  transition: background-color var(--default-transition);
+}
+
+.page-footer__social-link:hover,
+.page-footer__social-link:focus {
+  background-color: var(--green);
 }
 
 .page-footer__social-link-icon {
