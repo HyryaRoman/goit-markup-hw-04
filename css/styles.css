@@ -164,7 +164,14 @@ img {
 }
 
 .hero-section {
-  background-color: #2e2f42;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url("/images/hero.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 1440px;
   padding: 188px 0;
 }
 
