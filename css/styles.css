@@ -385,13 +385,14 @@ img {
 }
 
 .page-footer {
-  padding: 100px 15px;
+  padding: 100px 0;
   background-color: var(--navy-blue);
   color: var(--cloud);
 }
 
 .page-footer-container {
   display: flex;
+  align-items: baseline;
   gap: 120px;
 }
 
